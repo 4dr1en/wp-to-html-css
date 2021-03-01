@@ -1,0 +1,13 @@
+$c-title: #2c3142;
+$c-subtitle: #727990;
+$c-text: #969ca5;
+
+@font-face {
+    font-family: 'NTR';
+    src:url('NTR.ttf.woff') format('woff'),
+        url('NTR.ttf.svg#NTR') format('svg'),
+        url('NTR.ttf.eot'),
+        url('NTR.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}

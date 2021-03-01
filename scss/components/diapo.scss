@@ -1,0 +1,116 @@
+#diapo{
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    width: 100%;
+    line-height: 2.5rem;
+}
+#diapo__slide1, #diapo__slide2{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    padding-top: 150px;
+    left: 0vw;
+    &.out{
+        z-index: -1;
+        left: 100vw;
+    }
+
+    .diapo__content{
+        width: 55%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 20%;
+        font-size: 44px;
+        color: white;
+
+        #slide1__display{
+            font-size: 125px;
+            margin: 0;
+        }
+
+        .smallText{
+            font-size: 25px;
+        }
+    }
+
+    aside{
+        display: flex;
+        width: 45%;
+        img{
+            max-height: 620px;
+            align-self: flex-end;
+        }
+    }
+}
+
+#diapo__slide1{
+    z-index: 1;
+    background-color: #f9c81e;
+
+    .diapo__content{
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+    img[src="img/header/wave.png"]{
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+        width: 100%;
+        max-height: 150px;
+    }
+    img[src="img/header/sun.png"]{
+        position: absolute;
+        top: 7%;
+        right: 8%;
+        z-index: -1;
+        width: 6%;
+    }
+    img[src="img/header/cloud1.png"]{
+        position: absolute;
+        top: 13%;
+        right: 6%;
+        z-index: -1;
+        width: 15%;
+    }
+    img[src="img/header/cloud2.png"]{
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        z-index: -1;
+        width: 10%;
+    }
+}
+
+#diapo__slide2{
+    background-color: #1b67d4;
+
+    .diapo__content{
+        padding-right: 20%;
+        padding-left: 5%;
+    }
+
+    aside{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    img[src="img/header/blue_cloud.png"]{
+        position: absolute;
+
+        top: 15%;
+        right: 18%;
+        width: 10%;
+    }
+    img[src="img/header/blue_cloud2.png"]{
+        position: absolute;
+        top: 13%;
+        right: 9%;
+        width: 15%;
+    }
+}

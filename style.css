@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NTR";
+  src: url("NTR.ttf.woff") format("woff"), url("NTR.ttf.svg#NTR") format("svg"), url("NTR.ttf.eot"), url("NTR.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  height: 120px;
+}
+header img {
+  height: 38px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  padding-right: 30px;
+}
+header nav ul li:last-child {
+  margin: 0;
+  padding: 0 15px 0 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 26px;
+}
+header nav ul li:last-child a {
+  color: black !important;
+}
+header nav ul li:hover {
+  text-decoration: underline white;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header.deployed {
+  height: 80px;
+  background-color: #fff;
+}
+header.deployed li a {
+  color: black;
+}
+header.deployed li a:hover {
+  text-decoration: underline black;
+}
+
+section:not(#diapo) {
+  display: flex;
+  padding: 50px 20% 0 20%;
+}
+section:not(#diapo) h2 {
+  color: #2c3142;
+  font-size: 64px;
+  margin-bottom: 1px;
+  line-height: 3rem;
+  font-weight: 400;
+}
+section:not(#diapo) p {
+  color: #969ca5;
+  font-size: 20px;
+  line-height: 2rem;
+}
+section:not(#diapo) .subtitle {
+  color: #727990;
+  font-size: 30px;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+#overview div {
+  width: 60%;
+}
+#overview aside {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  width: 40%;
+}
+#overview aside img {
+  max-width: 100%;
+}
+
+#features {
+  flex-flow: column;
+  align-items: center;
+  background-color: #fafafa;
+  border-top: solid 1px #dddddd;
+  border-bottom: solid 1px #dddddd;
+}
+#features > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#features > div .card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 30%;
+  min-width: 300px;
+  padding: 0 50px 0 50px;
+}
+#features > div .card p {
+  text-align: center;
+}
+
+#icons > div {
+  width: 57%;
+  margin-left: 3%;
+}
+#icons > div ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  max-width: 460px;
+  padding-left: 0;
+}
+#icons > div ul li {
+  display: flex;
+  align-items: top;
+  margin: 20px 0 0 0;
+}
+#icons > div ul li p {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  color: black;
+}
+#icons > div ul img {
+  height: 45px;
+}
+#icons aside {
+  display: flex;
+  align-items: center;
+  width: 43%;
+}
+#icons aside img {
+  max-width: 100%;
+}
+
+#compatibility {
+  position: relative;
+  background: linear-gradient(#e0f2f9 75%, white);
+  margin-bottom: 50px;
+}
+#compatibility > div {
+  width: 50%;
+  padding-right: 12%;
+  z-index: 1;
+}
+#compatibility aside {
+  width: 50%;
+  z-index: 1;
+}
+#compatibility aside img {
+  width: 100%;
+}
+#compatibility img[src="img/corp/clouds.png"] {
+  position: absolute;
+  right: 25%;
+  top: 100px;
+  width: 600px;
+  z-index: 0;
+}
+
+#skins {
+  flex-flow: column;
+  text-align: center;
+}
+#skins #skins__whatchs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 70px;
+  padding-bottom: 60px;
+}
+#skins #skins__whatchs div {
+  max-width: 160px;
+}
+#skins #skins__whatchs div img {
+  width: 100%;
+}
+
+#apps {
+  background-color: #1b67d4;
+  background-image: url("img/corp/bg-1.png");
+  background-size: 150px 150px;
+}
+#apps aside {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5%;
+  width: 42%;
+}
+#apps aside img {
+  width: 100%;
+}
+#apps > div {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 8%;
+  padding-left: 8%;
+}
+#apps > div #stores {
+  display: flex;
+  flex-flow: row wrap;
+}
+#apps > div #stores img {
+  margin-right: 20px;
+  max-width: 190px;
+}
+#apps > div p {
+  font-size: 35px;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2078dc;
+  padding: 16px;
+}
+footer p {
+  font-size: 18px;
+  color: white;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+}
+footer ul li {
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  margin: 6px;
+  padding: 12px;
+}
+footer ul li img {
+  height: 15px;
+}
+
+#diapo {
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
+  line-height: 2.5rem;
+}
+
+#diapo__slide1, #diapo__slide2 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  padding-top: 150px;
+  left: 0vw;
+}
+#diapo__slide1.out, #diapo__slide2.out {
+  z-index: -1;
+  left: 100vw;
+}
+#diapo__slide1 .diapo__content, #diapo__slide2 .diapo__content {
+  width: 55%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20%;
+  font-size: 44px;
+  color: white;
+}
+#diapo__slide1 .diapo__content #slide1__display, #diapo__slide2 .diapo__content #slide1__display {
+  font-size: 125px;
+  margin: 0;
+}
+#diapo__slide1 .diapo__content .smallText, #diapo__slide2 .diapo__content .smallText {
+  font-size: 25px;
+}
+#diapo__slide1 aside, #diapo__slide2 aside {
+  display: flex;
+  width: 45%;
+}
+#diapo__slide1 aside img, #diapo__slide2 aside img {
+  max-height: 620px;
+  align-self: flex-end;
+}
+
+#diapo__slide1 {
+  z-index: 1;
+  background-color: #f9c81e;
+}
+#diapo__slide1 .diapo__content {
+  padding-left: 20%;
+  padding-right: 5%;
+}
+#diapo__slide1 img[src="img/header/wave.png"] {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+  width: 100%;
+  max-height: 150px;
+}
+#diapo__slide1 img[src="img/header/sun.png"] {
+  position: absolute;
+  top: 7%;
+  right: 8%;
+  z-index: -1;
+  width: 6%;
+}
+#diapo__slide1 img[src="img/header/cloud1.png"] {
+  position: absolute;
+  top: 13%;
+  right: 6%;
+  z-index: -1;
+  width: 15%;
+}
+#diapo__slide1 img[src="img/header/cloud2.png"] {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  z-index: -1;
+  width: 10%;
+}
+
+#diapo__slide2 {
+  background-color: #1b67d4;
+}
+#diapo__slide2 .diapo__content {
+  padding-right: 20%;
+  padding-left: 5%;
+}
+#diapo__slide2 aside {
+  display: flex;
+  justify-content: flex-end;
+}
+#diapo__slide2 img[src="img/header/blue_cloud.png"] {
+  position: absolute;
+  top: 15%;
+  right: 18%;
+  width: 10%;
+}
+#diapo__slide2 img[src="img/header/blue_cloud2.png"] {
+  position: absolute;
+  top: 13%;
+  right: 9%;
+  width: 15%;
+}
+
+/*définition*/
+@keyframes cloudSection {
+  to {
+    transform: translate(-250px);
+  }
+  from {
+    transform: translate(250px);
+  }
+}
+/*sections*/
+#clourdsLR {
+  animation: cloudSection 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+body {
+  margin: 0;
+}
+
+p, h1, h2, h3, li {
+  font-family: "NTR", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+/*définition*/
+
+@keyframes cloudSection{
+    to{
+        transform: translate(-250px);
+    }
+    from{
+        transform: translate(250px);
+    }
+}
+
+/*sections*/
+
+#clourdsLR{
+    animation: cloudSection 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

@@ -1,0 +1,16 @@
+@import "./utils/var.scss";
+
+@import "./layouts/header.scss";
+@import "./layouts/section.scss";
+@import "./layouts/footer.scss";
+
+@import "./components/diapo.scss";
+@import "./components/animations.scss";
+
+body{
+    margin: 0;
+}
+
+p, h1, h2, h3, li{
+    font-family: "NTR", sans-serif;
+}
